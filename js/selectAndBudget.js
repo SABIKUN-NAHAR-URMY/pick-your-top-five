@@ -8,6 +8,7 @@ function createMenuItem(name) {
     let li = document.createElement('li');
     li.textContent = name;
     count = count + 1;
+    //section five player validation check
     if(count > 5)
     {
         alert('Can not add more than 5 players');
