@@ -8,12 +8,13 @@ function createMenuItem(name) {
     let li = document.createElement('li');
     li.textContent = name;
     count = count + 1;
-    //section five player validation check
+    //selection five player validation check
     if(count > 5)
     {
         alert('Can not add more than 5 players');
         return;
     }
+    
     return li;
 }
 
@@ -25,6 +26,8 @@ document.getElementById('messi-btn').addEventListener('click',function(){
     const btn = document.getElementById('messi-btn');
     btn.disabled = 'true';
     btn.style.backgroundColor = '#A2A9AF';
+
+    
 })
 
 document.getElementById('neymar-btn').addEventListener('click',function(){
@@ -106,4 +109,3 @@ document.getElementById('dennis-btn').addEventListener('click',function(){
     btn.disabled = 'true';
     btn.style.backgroundColor = '#A2A9AF';
 })
-
